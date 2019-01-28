@@ -1,0 +1,12 @@
+= form_with model: @note,local: true,class: :area__input do |f|
+  = f.text_field :title, placeholder: "タイトル",class: "title-field"
+  %i.fa.fa-hashtag
+    = f.text_field :tag, placeholder: "タグ追加",class: "tag-field"
+  = f.text_area :text, placeholder: "メモ",class: "memo-field"
+  .area__edit
+    .area__icon
+      = f.button class: "memo-btn" do
+        %i.fa.fa-save
+      =link_to notes_path,class: "memo-btn" do
+        %i.fa.fa-times
+    .area__filter

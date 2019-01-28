@@ -1,0 +1,16 @@
+.header{
+  border-bottom: solid 1px #e7e7e7;
+  margin-bottom: 20px;
+  .navbar {
+    margin: 0 auto;
+    // background-color: red;
+    line-height: 3;
+    width: 70vw;
+    display: flex;
+    .title {
+    }
+    li {
+      list-style: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.contents
+  .content-memo
+    .area
+      = render :partial => "form"
+      %table
+        %thead
+          %th タイトル
+          %th 更新日時
+          %th タグ
+        - @notes.each do |note|
+          %tbody
+            %td= note.title
+            %td= note.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M")
+            %td= note.tag
+            %td= link_to "編集",notes_path(id: note.id)
+            %td= link_to "削除",note,method: :delete
+  .content-calender

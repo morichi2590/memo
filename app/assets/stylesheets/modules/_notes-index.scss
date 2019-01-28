@@ -1,0 +1,63 @@
+.area{
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.area__input {
+  display: flex;
+  flex-direction: column;
+  input,textarea{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    outline: 0;
+  }
+  i {
+    color: #428bca;
+  }
+  .title-field{
+    border: solid #cccccc;
+    border-width: 0 0 1px 0;
+  }
+  .tag-field {
+    border: none;
+  }
+  .memo-field {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 20vh;
+  }
+  .area__edit{
+    .area__icon {
+      .memo-btn {
+        margin-left: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+table{
+  width: 70vw;
+}
+thead {
+  border-bottom: solid 2px #cccccc;
+}
+tbody {
+  border-bottom: solid 1px #cccccc;
+}
+th,td{
+  padding: 10px;
+}
+th {
+  font-weight: bold;
+}
+
+.content-calender {
+  margin: 0 auto;
+}
